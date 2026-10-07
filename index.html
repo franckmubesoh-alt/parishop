@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parishop — Appareils électroniques à Douala</title>
+<meta name="description" content="Parishop — appareils électroniques à Douala. Découvrez nos produits et commandez directement sur WhatsApp.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f7f7;color:#171717;line-height:1.5}
+header{background:#111;color:#fff;position:sticky;top:0;z-index:10}
+.nav{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:800;letter-spacing:.5px}.logo span{color:#f4b400}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:14px}
+.hero{background:linear-gradient(135deg,#111 0%,#252525 60%,#f4b400 180%);color:#fff}
+.hero-inner{max-width:1100px;margin:auto;padding:75px 20px 85px}
+.badge{display:inline-block;background:#f4b400;color:#111;padding:7px 12px;border-radius:30px;font-weight:700;font-size:12px;margin-bottom:18px}
+h1{font-size:clamp(38px,7vw,68px);line-height:1.02;max-width:720px}
+.hero p{max-width:620px;margin:20px 0;font-size:18px;color:#e8e8e8}
+.btn{display:inline-block;padding:13px 19px;border-radius:8px;text-decoration:none;font-weight:700;border:0;cursor:pointer}
+.btn-primary{background:#f4b400;color:#111}.btn-dark{background:#111;color:#fff}
+section{max-width:1100px;margin:auto;padding:55px 20px}
+.section-title{font-size:32px;margin-bottom:10px}.section-sub{color:#666;margin-bottom:25px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 5px 20px #0000000c;border:1px solid #eee}
+.product-img{height:190px;background:#e9e9e9;display:flex;align-items:center;justify-content:center;font-size:55px}
+.card-body{padding:18px}.card h3{margin-bottom:6px}.price{font-size:20px;font-weight:800;margin:12px 0}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.feature{background:#fff;padding:22px;border-radius:12px;border:1px solid #eee}.feature strong{display:block;margin-bottom:7px}
+.contact{background:#111;color:#fff;border-radius:18px;padding:35px}
+.contact p{color:#ddd;margin:8px 0 18px}
+footer{background:#111;color:#aaa;text-align:center;padding:25px 20px;font-size:13px}
+.modal{display:none;position:fixed;inset:0;background:#0008;z-index:20;align-items:center;justify-content:center;padding:20px}
+.modal-box{background:#fff;max-width:500px;width:100%;border-radius:15px;padding:25px}
+.modal-box input,.modal-box textarea{width:100%;padding:12px;margin:7px 0 12px;border:1px solid #ddd;border-radius:7px}
+.close{float:right;font-size:25px;cursor:pointer}
+@media(max-width:650px){nav{display:none}.hero-inner{padding-top:55px}section{padding:40px 16px}}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<div class="logo">PARI<span>SHOP</span></div>
+<nav><a href="#accueil">Accueil</a><a href="#produits">Produits</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+<div class="hero-inner">
+<span class="badge">DOUALA • CAMEROUN</span>
+<h1>La technologie qui simplifie votre quotidien.</h1>
+<p>Découvrez une sélection d’appareils électroniques pratiques et modernes. Commandez simplement et échangez directement avec Parishop sur WhatsApp.</p>
+<a class="btn btn-primary" href="#produits">Voir les produits</a>
+</div>
+</section>
+
+<section id="produits">
+<h2 class="section-title">Nos produits</h2>
+<p class="section-sub">Une première sélection — remplace les produits ci-dessous par ton stock réel.</p>
+<div class="products">
+<article class="card">
+<div class="product-img">🔋</div><div class="card-body">
+<h3>Powerbank</h3><p>Solution pratique pour recharger vos appareils partout.</p>
+<div class="price">Prix à confirmer</div>
+<button class="btn btn-dark" onclick="order('Powerbank')">Commander</button>
+</div></article>
+<article class="card">
+<div class="product-img">⌚</div><div class="card-body">
+<h3>Montre connectée</h3><p>Un accessoire moderne pour accompagner votre quotidien.</p>
+<div class="price">Prix à confirmer</div>
+<button class="btn btn-dark" onclick="order('Montre connectée')">Commander</button>
+</div></article>
+<article class="card">
+<div class="product-img">💨</div><div class="card-body">
+<h3>Ventilateur rechargeable</h3><p>Une solution pratique pour rester au frais à la maison ou au travail.</p>
+<div class="price">Prix à confirmer</div>
+<button class="btn btn-dark" onclick="order('Ventilateur rechargeable')">Commander</button>
+</div></article>
+<article class="card">
+<div class="product-img">🔌</div><div class="card-body">
+<h3>Accessoires électroniques</h3><p>Découvrez prochainement notre sélection d’accessoires utiles.</p>
+<div class="price">Prix à confirmer</div>
+<button class="btn btn-dark" onclick="order('Accessoires électroniques')">Commander</button>
+</div></article>
+</div>
+</section>
+
+<section id="services">
+<h2 class="section-title">Pourquoi Parishop ?</h2>
+<div class="features">
+<div class="feature"><strong>📱 Commande simple</strong>Contactez-nous directement sur WhatsApp.</div>
+<div class="feature"><strong>📍 Douala</strong>Nous commençons notre activité à Douala.</div>
+<div class="feature"><strong>🤝 Service client</strong>Un échange direct avant votre commande.</div>
+<div class="feature"><strong>🚚 Livraison</strong>Les modalités de livraison sont confirmées lors de la commande.</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<h2>Besoin d’un produit ?</h2>
+<p>Écrivez-nous sur WhatsApp pour connaître la disponibilité, le prix et les conditions de livraison.</p>
+<a class="btn btn-primary" href="https://wa.me/237686997198?text=Bonjour%20Parishop%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20vos%20produits." target="_blank">WhatsApp : 686 997 198</a>
+</div>
+</section>
+</main>
+
+<footer>© 2026 Parishop — Appareils électroniques • Douala, Cameroun</footer>
+
+<div class="modal" id="modal">
+<div class="modal-box">
+<span class="close" onclick="closeModal()">×</span>
+<h2>Commander</h2>
+<p id="selected"></p>
+<label>Votre nom</label><input id="name" placeholder="Votre nom">
+<label>Votre message</label><textarea id="message" rows="3" placeholder="Ex : Je souhaite connaître le prix et la disponibilité."></textarea>
+<button class="btn btn-primary" onclick="sendOrder()">Envoyer sur WhatsApp</button>
+</div>
+</div>
+
+<script>
+let selectedProduct='';
+function order(product){selectedProduct=product;document.getElementById('selected').textContent='Produit : '+product;document.getElementById('modal').style.display='flex'}
+function closeModal(){document.getElementById('modal').style.display='none'}
+function sendOrder(){
+ const name=document.getElementById('name').value.trim();
+ const message=document.getElementById('message').value.trim();
+ let text='Bonjour Parishop, je souhaite commander : '+selectedProduct+'.';
+ if(name) text+=' Mon nom est '+name+'.';
+ if(message) text+=' '+message;
+ window.open('https://wa.me/237686997198?text='+encodeURIComponent(text),'_blank');
+}
+window.onclick=e=>{if(e.target===document.getElementById('modal'))closeModal()}
+</script>
+</body>
+</html>
